@@ -55,10 +55,10 @@ Uses pretrained weights to make predictions on images. Below table displays the 
 
     $ python3 detect.py --image_folder /data/samples
 
-<p align="center"><img src="assets/giraffe.png" width="480"\></p>
-<p align="center"><img src="assets/dog.png" width="480"\></p>
-<p align="center"><img src="assets/traffic.png" width="480"\></p>
-<p align="center"><img src="assets/messi.png" width="480"\></p>
+<p align="center"><img src=".github/doc/giraffe.png" width="480"\></p>
+<p align="center"><img src=".github/doc/dog.png" width="480"\></p>
+<p align="center"><img src=".github/doc/traffic.png" width="480"\></p>
+<p align="center"><img src=".github/doc/messi.png" width="480"\></p>
 
 ## Test
 Evaluates the model on COCO test.
@@ -66,9 +66,9 @@ Evaluates the model on COCO test.
     $ python3 test.py --weights_path weights/yolov3.weights
 
 | Model                   | mAP (min. 50 IoU) |
-| ----------------------- |:----------------:|
-| YOLOv3 (paper)          | 57.9             |
-| YOLOv3 (this impl.)     | 58.2             |
+| ----------------------- |:-----------------:|
+| YOLOv3 (paper)          | 57.9              |
+| YOLOv3 (this impl.)     | 58.2              |
 
 ## Train
 Data augmentation as well as additional training tricks remains to be implemented. PRs are welcomed!
