@@ -34,7 +34,9 @@ parser.add_argument("--checkpoint_interval", type=int, default=1, help="interval
 parser.add_argument(
     "--checkpoint_dir", type=str, default="checkpoints", help="directory where model checkpoints are saved"
 )
-parser.add_argument("--use_cuda", type=bool, default=True, help="whether to use cuda if available")
+parser.add_argument('--cuda', dest='use_cuda', action='store_true', help='to use cuda if available')
+parser.add_argument('--no_cuda', dest='use_cuda', action='store_false', help='not to use cuda')
+parser.set_defaults(use_cuda=True)
 opt = parser.parse_args()
 print(opt)
 
